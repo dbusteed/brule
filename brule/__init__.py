@@ -1,47 +1,50 @@
 import random
 
 # male first names
-ma = ['Alan']
-mb = ['Bobby','Barton','Billy']
-mc = ['Curtis','Charles','Charlie','Karl','Carl']
-md = ['Donald','Deryl', 'Darvin','Danny']
-me = ['Eddy']
-mf = ['Franky','Phillip']
-mg = ['Gary','Jerry','Gerald']
-mh = ['Harry']
-mj = ['Jimmy', 'Jerry','Johnny']
-mk = ['Kevin, Kenny']
-ml = ['Larry']
-mm = ['Mikey','Michael']
-mn = ['Norman']
-mo = ['Oscar']
-mp = ['Paul']
-mr = ['Richie', 'Randy', 'Ronnie', 'Ronald']
-ms = ['Sammy', 'Stevie']
-mt = ['Tony','Timmy','Tommy','Teddy']
-mw = ['Walter', 'Willy']
-mOther = ['Jimmy', 'Johnny']
-mAll = [ma, mb, mc, md, me, mf, mg, mh, mj, mk, ml, mm, mn, mo, mp, mr, ms, mt, mw]
+ma = ['Alan', 'Albert', 'Adam', 'Alfredo', 'Alvin', 'Arthur']
+mb = ['Bobby','Barton','Billy', 'Barney', 'Bart', 'Benny', 'Bill', 'Buster', 'Bruce', 'Brian', 'Barry']
+mc = ['Curtis','Charles','Charlie','Karl','Carl', 'Calvin', 'Chuck', 'Craig', 'Cletus', 'Croobus']
+md = ['Dan', 'Donny', 'Donald','Deryl', 'Darvin','Danny', 'Dale', 'Douglas', 'Doyle', 'Diego', 'Delbert']
+me = ['Eddy', 'Eddie', 'Ernie', 'Earl', 'Elbert', 'Eric', 'Elmo', 'Elvis', 'Edgar', ]
+mf = ['Franky','Phillip', 'Fabio', 'Frank', 'Fred', 'Freddy', 'Franklin', 'Floyd', 'Francis']
+mg = ['Gary','Jerry','Gerald', 'Garfield', 'Greg', 'Gus', 'Glen', 'George',]
+mh = ['Harry', 'Hank', 'Harold', 'Howard', 'Homer', 'Huey',]
+mi = ['Ian', 'Irwin', 'Ivan', 'Isaac']
+mj = ['Jimmy', 'Jerry','Johnny', 'Jeffry', 'Jackson', 'Justin', 'Jason']
+mk = ['Kevin', 'Kenny', 'Karl', 'Kyle', 'Kirby', 'Kenneth', 'Keith']
+ml = ['Larry', 'Lloyd', 'Louie', 'Leroy', 'Lester', 'Lenny']
+mm = ['Mickey','Michael','Marcus', 'Melvin', 'Marivn', ]
+mn = ['Norman', 'Norbert', 'Nick', 'Nelson', 'Ned']
+mo = ['Oscar','Omar', 'Owen', 'Otis']
+mp = ['Paul', 'Pablo', 'Patrick', 'Peter', 'Perry', 'Pedro']
+mq = ['Quinton', 'Quoogis', 'Qubith']
+mr = ['Richie', 'Roy', 'Randy', 'Ronnie', 'Ronald', 'Rufus', 'Robbie', 'Reggie', 'Rudolph']
+ms = ['Sammy', 'Stevie', 'Scotty', 'Stewary', 'Stanley', ]
+mt = ['Tony','Timmy','Tommy','Teddy', 'Terry']
+mv = ['Vance', 'Vern', 'Vinny', 'Victor']
+mw = ['Walter', 'Willy', 'Wallace', 'Willis']
+mOther = ['Jimmy', 'Johnny', 'Rufus', 'Tony', 'Randy', ]
+mAll = [ma, mb, mc, md, me, mf, mg, mh, mi, mj, mk, ml, mm, mn, mo, mp, mq, mr, ms, mt, mv, mw]
 
 #female
-fa = ['Amy']
-fb = ['Betty']
-fc = ['Cindy','Cyntia']
-fd = ['Doris','Debbie']
-fe = ['Emily']
-ff = ['Frannie','Francis']
-fg = ['Gretchen', 'Gina']
-fh = ['Hannah']
-fj = ['Jenny']
-fk = ['Katie']
-fl = ['Lucy']
-fm = ['Mary']
-fn = ['Nancy']
-fp = ['Paulie']
-fr = ['Rita']
-fs = ['Sally', 'Sarah']
-ft = ['Tiffany', 'Tina', 'Tracy']
-fw = ['Wanda', 'Wendy']
+fa = ['Amy', 'Abby', 'Ally', 'Anna']
+fb = ['Betty', 'Beverly', 'Babara', 'Betsy', 'Bonny']
+fc = ['Cindy','Cyntia', 'Carly', 'Carol']
+fd = ['Doris','Debbie', 'Daisy', 'Dolores', ]
+fe = ['Emily', 'Erica', 'Edna']
+ff = ['Frannie','Francis', 'Fanny',]
+fg = ['Gretchen', 'Gina', 'Gloria', 'Georgus']
+fh = ['Hannah', 'Honey', 'Herma', 'Helen',]
+fj = ['Jenny', 'Jacky', 'Jessie']
+fk = ['Katie', 'Kathy', 'Kelly', ]
+fl = ['Lucy', 'Lisa', 'Lora', 'Lindsay']
+fm = ['Mary', 'Martha', 'Margo']
+fn = ['Nancy', 'Nicky', 'Norma', ]
+fp = ['Paulie', 'Patty', 'Penny']
+fr = ['Rita', 'Roxanne', 'Rosy']
+fs = ['Sally', 'Sarah', 'Sharla', 'Shawna']
+ft = ['Tiffany', 'Tina', 'Tracy', 'Toni', ]
+fw = ['Wanda', 'Wendy', 'Wilma']
 fOther = ['Sally','Cindy','Doris']
 fAll = [fa, fb, fc, fd, fe, ff, fg, fh, fj, fl, fm, fn, fp, fr, fs, ft, fw]
 
@@ -58,6 +61,7 @@ suffix = [
     'ingle',
     'rangle',
     'ramble',
+    'rungo',
 ]
 
 noRsuffix = [
@@ -67,114 +71,200 @@ noRsuffix = [
     'ingle',
     'angle',
     'amble',
+    'umble',
 ]
-vowelSuffix = ['Bringle','Brangus','Drangus','Brungus']
 
+vowelSuffix = [
+    'Bringle',
+    'Brangus',
+    'Bringo',
+    'Bingus',
+    'Brungus',
+    'Brangle',
+    'Brungo',
+    'Bramble',
+    'Drangus',
+    'Pringle',
+    'Rangus',
+    'Ringus',
+    'Crangus',
+]
+
+vowels = ['a','e','i','o','u']
+badWithR = ['r', 'j', 'w', 'm', 'n']
+
+alpha = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
+'m', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 def name(first='', last='', gender=''):
+
+    badInput = True
+
     if(first==''):
         first = input('Enter first name: ')
+
+    if((len(first) > 0) and (first[0].lower() in alpha)):
+        badInput = False
+
+    while badInput:
+        try:
+            first = input('Enter a valid first name: ')
+            if((len(first) > 0) and (first[0].lower() in alpha)):
+                badInput = False
+                break
+        except:
+            pass
+
+    badInput = True
+
     if(last==''):
         last = input('Enter last name: ')
+
+    if((len(last) > 0) and (last[0].lower() in alpha)):
+        badInput = False
+
+    while badInput:
+        try:
+            last = input('Enter a valid last name: ')
+            if((len(last) > 0) and (last[0].lower() in alpha)):
+                badInput = False
+                break
+        except:
+            pass
+
+    badInput = True
+
     if(gender==''):
         gender = input('Male of female? [m/f]: ')
 
-    if(gender == 'm'):
+    if((len(gender) == 1) and gender.lower() in ['m', 'f']):
+        badInput = False
+
+    while badInput:
+        try:
+            gender = input("Enter a 'm' or 'f' for gender: ")
+            if((len(gender) == 1) and gender.lower() in ['m', 'f']):
+                badInput = False
+                break
+        except:
+            pass
+
+    def getName(xList):
+        return xList[random.randint(0, len(xList) - 1)]
+
+    # get random default names just in case
+    genList = allFirst[random.randint(0,1)]
+    nameList = genList[random.randint(0, len(genList)-1)]
+    bFirst = nameList[random.randint(0, len(nameList)-1)]
+
+    bLast = last[0].upper() + suffix[random.randint(0, len(suffix)-1)]
+
+    if(gender.lower() == 'm'):
         if(first[0].lower() == 'a'):
-            bFirst = ma[random.randint(0,len(ma)-1)]
+            bFirst = getName(ma)
         elif(first[0].lower() == 'b'):
-            bFirst = mb[random.randint(0,len(mb)-1)]
+            bFirst = getName(mb)
         elif(first[0].lower() == 'c'):
-            bFirst = mc[random.randint(0,len(mc)-1)]
+            bFirst = getName(mc)
         elif(first[0].lower() == 'd'):
-            bFirst = md[random.randint(0,len(md)-1)]
+            bFirst = getName(md)
         elif(first[0].lower() == 'e'):
-            bFirst = me[random.randint(0,len(me)-1)]
+            bFirst = getName(me)
         elif(first[0].lower() == 'f'):
-            bFirst = mf[random.randint(0,len(mf)-1)]
+            bFirst = getName(mf)
         elif(first[0].lower() == 'g'):
-            bFirst = mg[random.randint(0,len(mg)-1)]
+            bFirst = getName(mg)
         elif(first[0].lower() == 'h'):
-            bFirst = mh[random.randint(0,len(mh)-1)]
+            bFirst = getName(mh)
+        elif(first[0].lower() == 'i'):
+            bFirst = getName(mi)
         elif(first[0].lower() == 'j'):
-            bFirst = mj[random.randint(0,len(mj)-1)]
+            bFirst = getName(mj)
         elif(first[0].lower() == 'k'):
-            bFirst = mk[random.randint(0,len(mk)-1)]
+            bFirst = getName(mk)
         elif(first[0].lower() == 'l'):
-            bFirst = ml[random.randint(0,len(ml)-1)]
+            bFirst = getName(ml)
         elif(first[0].lower() == 'm'):
-            bFirst = mm[random.randint(0,len(mm)-1)]
+            bFirst = getName(mm)
         elif(first[0].lower() == 'n'):
-            bFirst = mn[random.randint(0,len(mn)-1)]
+            bFirst = getName(mn)
         elif(first[0].lower() == 'o'):
-            bFirst = mo[random.randint(0,len(mo)-1)]
+            bFirst = getName(mo)
         elif(first[0].lower() == 'p'):
-            bFirst = mp[random.randint(0,len(mp)-1)]
+            bFirst = getName(mp)
+        elif(first[0].lower() == 'q'):
+            bFirst = getName(mq)
         elif(first[0].lower() == 'r'):
-            bFirst = mr[random.randint(0,len(mr)-1)]
+            bFirst = getName(mr)
         elif(first[0].lower() == 's'):
-            bFirst = ms[random.randint(0,len(ms)-1)]
+            bFirst = getName(ms)
         elif(first[0].lower() == 't'):
-            bFirst = mt[random.randint(0,len(mt)-1)]
+            bFirst = getName(mt)
+        elif(first[0].lower() == 'v'):
+            bFirst = getName(mv)
         elif(first[0].lower() == 'w'):
-            bFirst = mw[random.randint(0,len(mw)-1)]
+            bFirst = getName(mw)
         else:
-            bFirst = mOther[random.randint(0,len(mOther)-1)]
-    elif(gender == 'f'):
+            bFirst = getName(mOther)
+    elif(gender.lower() == 'f'):
         if(first[0].lower() == 'a'):
-            bFirst = fa[random.randint(0, len(fa)-1)]
+            bFirst = getName(fa)
         elif(first[0].lower() == 'b'):
-            bFirst = fb[random.randint(0, len(fb)-1)]
+            bFirst = getName(fb)
         elif(first[0].lower() == 'c'):
-            bFirst = fb[random.randint(0, len(fb)-1)]
+            bFirst = getName(fc)
         elif(first[0].lower() == 'd'):
-            bFirst = fd[random.randint(0, len(fd)-1)]
+            bFirst = getName(fd)
         elif(first[0].lower() == 'e'):
-            bFirst = fe[random.randint(0, len(fe)-1)]
+            bFirst = getName(fe)
         elif(first[0].lower() == 'f'):
-            bFirst = ff[random.randint(0, len(ff)-1)]
+            bFirst = getName(ff)
         elif(first[0].lower() == 'h'):
-            bFirst = fh[random.randint(0, len(fh)-1)]
+            bFirst = getName(fh)
         elif(first[0].lower() == 'j'):
-            bFirst = fj[random.randint(0, len(fj)-1)]
+            bFirst = getName(fj)
         elif(first[0].lower() == 'k'):
-            bFirst = fk[random.randint(0, len(fk)-1)]
+            bFirst = getName(fk)
         elif(first[0].lower() == 'l'):
-            bFirst = fl[random.randint(0, len(fl)-1)]
+            bFirst = getName(fl)
         elif(first[0].lower() == 'm'):
-            bFirst = fm[random.randint(0, len(fm)-1)]
+            bFirst = getName(fm)
         elif(first[0].lower() == 'n'):
-            bFirst = fn[random.randint(0, len(fn)-1)]
+            bFirst = getName(fn)
         elif(first[0].lower() == 'p'):
-            bFirst = fp[random.randint(0, len(fp)-1)]
+            bFirst = getName(fp)
         elif(first[0].lower() == 's'):
-            bFirst = fs[random.randint(0, len(fs)-1)]
+            bFirst = getName(fs)
         else:
-            bFirst = fOther[random.randint(0, len(fOther)-1)]
-
-
-    vowels = ['a','e','i','o','u']
-    badWithR = ['r', 'j', 'w', 'm', 'n']
+            bFirst = getName(fOther)
 
     if(last[0].lower() in vowels):
-        bLast = vowelSuffix[random.randint(0, len(vowelSuffix)-1)]
+        blast = getName(vowelSuffix)
     elif(last[0].lower() in badWithR):
-        bLast = last[0].upper() + noRsuffix[random.randint(0, len(noRsuffix)-1)]
+        bLast = last[0].upper() + getName(noRsuffix)
     else:
-        bLast = last[0].upper() + suffix[random.randint(0, len(suffix)-1)]
+        bLast = last[0].upper() + getName(suffix)
 
-    print(bFirst + ' ' + bLast)
+    return bFirst + ' ' + bLast
 
 def randomName(gender=''):
-    if(gender=='m'):
-        print('')
-    elif(gender=='f'):
-        print('')
+    if(gender.lower()=='m'):
+        genList = allFirst[0]
+    elif(gender.lower()=='f'):
+        genList = allFirst[1]
     else:
         genList = allFirst[random.randint(0,1)]
-        nameList = genList[random.randint(0, len(genList)-1)]
-        bFirst = nameList[random.randint(0, len(nameList)-1)]
 
-        bLast = vowelSuffix[random.randint(0, len(vowelSuffix)-1)]
+    nameList = genList[random.randint(0, len(genList)-1)]
+    bFirst = nameList[random.randint(0, len(nameList)-1)]
 
-    print(bFirst + ' ' + bLast)
+    bLast = vowelSuffix[random.randint(0, len(vowelSuffix)-1)]
+
+    return bFirst + ' ' + bLast
+
+
+def help():
+    print('\nSteve Brule name generator\n')
+    print('name() --> system queries for first, last, and gender as input')
+    print("name() also can take arguments --> name('Richie', 'Jackson', 'm')")
+    print('randomName() --> returns random brule name, can also take gender argument\n')
