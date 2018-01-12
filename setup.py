@@ -7,7 +7,7 @@ setup(
   author = 'Davis Busteed',
   author_email = 'busteed.davis@gmail.com',
   url = 'https://github.com/dbusteed/brule', # use the URL to the github repo
-  #download_url = 'https://github.com/peterldowns/mypackage/archive/0.1.tar.gz', # I'll explain this in a second
+  #download_url = 'https://github.com/dbusteed/brule/archive/0.1.tar.gz', # I'll explain this in a second
   keywords = ['testing', 'brule', 'names'], # arbitrary keywords
   classifiers = [],
 )
