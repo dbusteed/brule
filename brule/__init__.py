@@ -33,7 +33,7 @@ fc = ['Cindy','Cyntia', 'Carly', 'Carol']
 fd = ['Doris','Debbie', 'Daisy', 'Dolores', ]
 fe = ['Emily', 'Erica', 'Edna']
 ff = ['Frannie','Francis', 'Fanny',]
-fg = ['Gretchen', 'Gina', 'Gloria', 'Georgus']
+fg = ['Gretchen', 'Gina', 'Gloria',]
 fh = ['Hannah', 'Honey', 'Herma', 'Helen',]
 fj = ['Jenny', 'Jacky', 'Jessie']
 fk = ['Katie', 'Kathy', 'Kelly', ]
@@ -88,6 +88,8 @@ vowelSuffix = [
     'Rangus',
     'Ringus',
     'Crangus',
+    'Jangles',
+    'Jangus',
 ]
 
 vowels = ['a','e','i','o','u']
@@ -95,6 +97,10 @@ badWithR = ['r', 'j', 'w', 'm', 'n']
 
 alpha = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+quotes = [
+    "Life's about having fun and eating candy, not about getting roaches in your hair."
+]
 
 def name(first='', last='', gender=''):
 
@@ -262,9 +268,12 @@ def randomName(gender=''):
 
     return bFirst + ' ' + bLast
 
-
+def quote():
+    return quotes[random.randint(0, len(quotes)-1)]
+    
 def help():
     print('\nSteve Brule name generator\n')
     print('name() --> system queries for first, last, and gender as input')
     print("name() also can take arguments --> name('Richie', 'Jackson', 'm')")
     print('randomName() --> returns random brule name, can also take gender argument\n')
+    print('quote() --> returns a random quote from the doctor')
