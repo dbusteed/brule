@@ -19,5 +19,5 @@ C:\> pip install brule
 ---
 ```python
 >>>import brule as b
->>>brule.help()
+>>>b.help()
 ```
