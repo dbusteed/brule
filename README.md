@@ -1,6 +1,7 @@
 # Dr. Steve Brule Name Generator
 
-I was curious on how PyPi packages were created, so this is what I came up with for testing purposes
+I was curious on how PyPi packages were created, so this is what I came up with for testing purposes.
+It's pretty handy for making a lists of names for example data, etc.
 
 ### Installation
 ---

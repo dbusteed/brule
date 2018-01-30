@@ -1,29 +1,29 @@
 import random
 
 # male first names
-ma = ['Alan', 'Albert', 'Adam', 'Alvin', 'Arthur']
-mb = ['Bobby','Barton','Billy', 'Barney', 'Bart', 'Benny', 'Bill', 'Buster', 'Bruce', 'Brian', 'Barry']
-mc = ['Curtis','Charles','Charlie','Karl','Carl', 'Calvin', 'Chuck', 'Craig', 'Cletus', 'Croobus']
-md = ['Dan', 'Donny', 'Donald','Deryl', 'Darvin','Danny', 'Dale', 'Douglas', 'Doyle', 'Diego', 'Delbert']
-me = ['Eddy', 'Eddie', 'Ernie', 'Earl', 'Elbert', 'Eric', 'Elmo', 'Elvis', 'Edgar', ]
-mf = ['Franky','Phillip', 'Fabio', 'Frank', 'Fred', 'Freddy', 'Franklin', 'Floyd', 'Francis']
-mg = ['Gary','Jerry','Gerald', 'Garfield', 'Greg', 'Gus', 'Glen', 'George',]
-mh = ['Harry', 'Hank', 'Harold', 'Howard', 'Homer', 'Huey',]
-mi = ['Ian', 'Irwin', 'Ivan', 'Isaac']
+ma = ['Alan', 'Albert', 'Alvin', 'Arthur']
+mb = ['Bobby','Billy', 'Barney', 'Benny', 'Buster', 'Bruce', 'Brian', 'Barry']
+mc = ['Curtis','Charles','Charlie','Karl','Carl', 'Calvin', 'Chuck',]
+md = ['Dan', 'Daniel', 'Donny', 'Donald','Deryl', 'Darvin','Danny','Douglas', 'Doyle', 'Diego',]
+me = ['Eddy', 'Eddie', 'Ernie', 'Earl', 'Elbert', 'Eric', 'Elmo', 'Edgar', ]
+mf = ['Franky','Phillip', 'Fabio', 'Frank', 'Fred', 'Freddy', 'Franklin', 'Francis']
+mg = ['Gary','Jerry','Gerald', 'Garfield', 'Greg', 'Gus', 'Glen', 'George', 'Georgie',]
+mh = ['Harry', 'Hank', 'Harold', 'Howard', 'Huey',]
+mi = ['Ian', 'Irwin', 'Ivan']
 mj = ['Jimmy', 'Jerry','Johnny', 'Jeffry',]
-mk = ['Kevin', 'Kenny', 'Karl', 'Kyle', 'Kirby', 'Kenneth', 'Keith']
+mk = ['Kevin', 'Kenny', 'Karl', 'Kyle', 'Kirby', 'Keith']
 ml = ['Larry', 'Lloyd', 'Louie', 'Leroy', 'Lester', 'Lenny']
 mm = ['Mickey','Michael','Marcus', 'Melvin', 'Marivn', ]
-mn = ['Norman', 'Norbert', 'Nick', 'Nelson', 'Ned']
+mn = ['Norman', 'Nick', 'Nelson', 'Ned']
 mo = ['Oscar','Omar', 'Owen', 'Otis']
 mp = ['Paul', 'Pablo', 'Patrick', 'Peter', 'Perry', 'Pedro']
 mq = ['Quinton', 'Quoogis', 'Qubith']
 mr = ['Richie', 'Roy', 'Randy', 'Ronnie', 'Ronald', 'Rufus', 'Robbie', 'Reggie', 'Rudolph']
-ms = ['Sammy', 'Stevie', 'Scotty', 'Stewary', 'Stanley', ]
+ms = ['Sammy', 'Stevie', 'Scotty', 'Stanley', ]
 mt = ['Tony','Timmy','Tommy','Teddy', 'Terry']
 mv = ['Vance', 'Vern', 'Vinny', 'Victor']
 mw = ['Walter', 'Willy', 'Wallace', 'Willis']
-mOther = ['Jimmy', 'Johnny', 'Rufus', 'Tony', 'Randy', ]
+mOther = ['Jimmy', 'Johnny', 'Rufus', 'Tony', 'Randy', 'Danny', 'Billy', 'Stevie']
 mAll = [ma, mb, mc, md, me, mf, mg, mh, mi, mj, mk, ml, mm, mn, mo, mp, mq, mr, ms, mt, mv, mw]
 
 #female
@@ -33,7 +33,7 @@ fc = ['Cindy','Cyntia', 'Carly', 'Carol']
 fd = ['Doris','Debbie', 'Daisy', 'Dolores', ]
 fe = ['Emily', 'Erica', 'Edna']
 ff = ['Frannie','Francis', 'Fanny',]
-fg = ['Gretchen', 'Gina', 'Gloria',]
+fg = ['Gretchen', 'Gloria',]
 fh = ['Hannah', 'Honey', 'Herma', 'Helen',]
 fj = ['Jenny', 'Jacky', 'Jessie']
 fk = ['Katie', 'Kathy', 'Kelly', ]
@@ -42,7 +42,7 @@ fm = ['Mary', 'Martha', 'Margo']
 fn = ['Nancy', 'Nicky', 'Norma', ]
 fp = ['Paulie', 'Patty', 'Penny']
 fr = ['Rita', 'Roxanne', 'Rosy']
-fs = ['Sally', 'Sarah', 'Sharla', 'Shawna']
+fs = ['Sally', 'Sarah', 'Sharla', 'Shawna', 'Susan']
 ft = ['Tiffany', 'Tina', 'Tracy', 'Toni', ]
 fw = ['Wanda', 'Wendy', 'Wilma']
 fOther = ['Sally','Cindy','Doris']
@@ -288,7 +288,6 @@ def help():
     print('\nSteve Brule name generator\n')
     print('name() --> system queries for first, last, and gender as input')
     print("name() also can take arguments --> name('Richie', 'Jackson', 'm')")
-    print('randomName() --> returns random brule name, can also take gender argument\n')
-    print('randomFirst() --> returns a random first name, can take the gender argument\n')
+    print('randomName() --> returns random brule name, can also take gender argument')
+    print('randomFirst() --> returns a random first name, can take the gender argument')
     print('randomLast() --> returns a random last name, can take the gender argument\n')
-    print('quote() --> returns a random quote from the doctor')

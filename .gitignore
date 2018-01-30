@@ -1,0 +1,5 @@
+dist
+MANIFEST
+*.pyc
+__pycache__/
+*.log
