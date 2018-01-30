@@ -1,7 +1,7 @@
 import random
 
 # male first names
-ma = ['Alan', 'Albert', 'Adam', 'Alfredo', 'Alvin', 'Arthur']
+ma = ['Alan', 'Albert', 'Adam', 'Alvin', 'Arthur']
 mb = ['Bobby','Barton','Billy', 'Barney', 'Bart', 'Benny', 'Bill', 'Buster', 'Bruce', 'Brian', 'Barry']
 mc = ['Curtis','Charles','Charlie','Karl','Carl', 'Calvin', 'Chuck', 'Craig', 'Cletus', 'Croobus']
 md = ['Dan', 'Donny', 'Donald','Deryl', 'Darvin','Danny', 'Dale', 'Douglas', 'Doyle', 'Diego', 'Delbert']
@@ -10,7 +10,7 @@ mf = ['Franky','Phillip', 'Fabio', 'Frank', 'Fred', 'Freddy', 'Franklin', 'Floyd
 mg = ['Gary','Jerry','Gerald', 'Garfield', 'Greg', 'Gus', 'Glen', 'George',]
 mh = ['Harry', 'Hank', 'Harold', 'Howard', 'Homer', 'Huey',]
 mi = ['Ian', 'Irwin', 'Ivan', 'Isaac']
-mj = ['Jimmy', 'Jerry','Johnny', 'Jeffry', 'Jackson', 'Justin', 'Jason']
+mj = ['Jimmy', 'Jerry','Johnny', 'Jeffry',]
 mk = ['Kevin', 'Kenny', 'Karl', 'Kyle', 'Kirby', 'Kenneth', 'Keith']
 ml = ['Larry', 'Lloyd', 'Louie', 'Leroy', 'Lester', 'Lenny']
 mm = ['Mickey','Michael','Marcus', 'Melvin', 'Marivn', ]
@@ -83,24 +83,23 @@ vowelSuffix = [
     'Brangle',
     'Brungo',
     'Bramble',
+    'Crangus',
     'Drangus',
+    'Dangus',
+    'Dingus',
+    'Dringus',
+    'Jangles',
+    'Jangus',
     'Pringle',
     'Rangus',
     'Ringus',
-    'Crangus',
-    'Jangles',
-    'Jangus',
 ]
 
 vowels = ['a','e','i','o','u']
-badWithR = ['r', 'j', 'w', 'm', 'n']
+badWithR = ['r', 'j', 'w', 'm', 'n', 'h']
 
 alpha = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-
-quotes = [
-    "Life's about having fun and eating candy, not about getting roaches in your hair."
-]
 
 def name(first='', last='', gender=''):
 
@@ -267,13 +266,29 @@ def randomName(gender=''):
     bLast = vowelSuffix[random.randint(0, len(vowelSuffix)-1)]
 
     return bFirst + ' ' + bLast
-
-def quote():
-    return quotes[random.randint(0, len(quotes)-1)]
+    
+def randomFirst(gender=''):
+    if(gender.lower()=='m'):
+        genList = allFirst[0]
+    elif(gender.lower()=='f'):
+        genList = allFirst[1]
+    else:
+        genList = allFirst[random.randint(0,1)]
+        
+    nameList = genList[random.randint(0, len(genList)-1)]
+    bFirst = nameList[random.randint(0, len(nameList)-1)]
+    
+    return bFirst
+    
+def randomLast():
+    bLast = vowelSuffix[random.randint(0, len(vowelSuffix)-1)]
+    return bLast
     
 def help():
     print('\nSteve Brule name generator\n')
     print('name() --> system queries for first, last, and gender as input')
     print("name() also can take arguments --> name('Richie', 'Jackson', 'm')")
     print('randomName() --> returns random brule name, can also take gender argument\n')
+    print('randomFirst() --> returns a random first name, can take the gender argument\n')
+    print('randomLast() --> returns a random last name, can take the gender argument\n')
     print('quote() --> returns a random quote from the doctor')
