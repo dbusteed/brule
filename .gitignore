@@ -1,5 +1,7 @@
 dist
-MANIFEST
+build
 *.pyc
 __pycache__/
 *.log
+TODO
+brule.egg-info
